@@ -1,4 +1,4 @@
-<package>
+<package format="2">
 
   <name>camera_info_manager_py</name>
   <version>0.2.3</version>
@@ -17,16 +17,14 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>camera_info_manager</build_depend>
-  <build_depend>rospy</build_depend>
-  <build_depend>rostest</build_depend>
-  <build_depend>sensor_msgs</build_depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
 
-  <run_depend>python-rospkg</run_depend>
-  <run_depend>python-yaml</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>sensor_msgs</run_depend>
+  <exec_depend>python-rospkg</exec_depend>
+  <exec_depend>python-yaml</exec_depend>
 
+  <test_depend>camera_info_manager</test_depend>
+  <test_depend>rostest</test_depend>
   <test_depend>rosunit</test_depend>
 
   <export>
